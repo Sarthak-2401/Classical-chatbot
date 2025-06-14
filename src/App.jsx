@@ -23,7 +23,8 @@ function App() {
     if(input.includes("is this conversation recorded")) return "No , it isn't.";
     if(input.includes("use this chatbot on phone")) return "Yes, i am fully compatible with mobile devices.";
     if(input.includes("what can you do")) return "I can answer basic questions as i am just a newbie🤓";
-    if(input.includes("what languages do you")) return "Right now, I can speak English only."
+    if(input.includes("what languages do you") || input.includes("how many languages do you know")) return "Right now, I can speak English only."
+    if(input.includes("why we need you")) return "i am reply with automated messages";
 
     return "sorry, i am unable to understand your message";
   }
